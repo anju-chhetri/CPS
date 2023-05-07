@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/anju_chhetri/esp/esp-idf/components/**",
+                "/home/anju_chhetri/esp/esp-idf/components/freertos/FreeRTOS-Kernel-SMP/include"
+            ],
+            "browse": {
+                "path": [
+                    "/home/anju_chhetri/esp/esp-idf/components/",
+                    "${workspaceFolder}"
+                ],
+                "limitSymbolsToIncludedHeaders": false
+            },
+            "defines": [],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c17",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "linux-clang-x64",
+            "configurationProvider": "ms-vscode.cmake-tools"
+        }
+    ],
+    "version": 4
+}
