@@ -28,9 +28,8 @@ y = []
 with open(CSVFile, 'r') as csvfile:
     plots = csv.reader(csvfile, delimiter = ',')
     for row in plots:
-        x.append(1/int(row[0]))  #Distance
-        y.append(int(row[1]))    #Voltage
-
+        y.append(float(row[1])/100)    #Voltage --> not mv
+        x.append(1/float(row[0]))  #Distance
 x = np.array(x).reshape((-1,1))
 # x = x.reshape((-1, 1))
 y = np.array(y).reshape((-1,1))
@@ -46,8 +45,8 @@ print('Root Mean Square:', rmse)
 
 if args.plot:
     plt.scatter(x, y, s =10)
-    plt.xlabel('x')
-    plt.ylabel('y')
+    plt.xlabel('x(Distance)')
+    plt.ylabel('y(Voltage (V))')
 
     plt.plot(x, y_predicted, color = 'g')
     plt.show()
