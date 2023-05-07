@@ -8,7 +8,6 @@
 #include "driver/adc.h"
 #include "esp_adc_cal.h"
 
-
 #define ADC_CHANNEL ADC1_CHANNEL_6 //GPIO34
 
 static const char *TAG = "Sharp ADC Measured Distance: ";
