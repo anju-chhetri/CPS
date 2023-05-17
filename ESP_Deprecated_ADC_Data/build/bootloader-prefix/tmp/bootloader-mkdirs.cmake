@@ -4,19 +4,19 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/home/anju_chhetri/esp/esp-idf/components/bootloader/subproject"
-  "/home/anju_chhetri/Desktop/CPS/test/build/bootloader"
-  "/home/anju_chhetri/Desktop/CPS/test/build/bootloader-prefix"
-  "/home/anju_chhetri/Desktop/CPS/test/build/bootloader-prefix/tmp"
-  "/home/anju_chhetri/Desktop/CPS/test/build/bootloader-prefix/src/bootloader-stamp"
-  "/home/anju_chhetri/Desktop/CPS/test/build/bootloader-prefix/src"
-  "/home/anju_chhetri/Desktop/CPS/test/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/yunika/esp/esp-idf/components/bootloader/subproject"
+  "/home/yunika/Desktop/CPS/ESP_Deprecated_ADC_Data/build/bootloader"
+  "/home/yunika/Desktop/CPS/ESP_Deprecated_ADC_Data/build/bootloader-prefix"
+  "/home/yunika/Desktop/CPS/ESP_Deprecated_ADC_Data/build/bootloader-prefix/tmp"
+  "/home/yunika/Desktop/CPS/ESP_Deprecated_ADC_Data/build/bootloader-prefix/src/bootloader-stamp"
+  "/home/yunika/Desktop/CPS/ESP_Deprecated_ADC_Data/build/bootloader-prefix/src"
+  "/home/yunika/Desktop/CPS/ESP_Deprecated_ADC_Data/build/bootloader-prefix/src/bootloader-stamp"
 )
 
 set(configSubDirs )
 foreach(subDir IN LISTS configSubDirs)
-    file(MAKE_DIRECTORY "/home/anju_chhetri/Desktop/CPS/test/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
+    file(MAKE_DIRECTORY "/home/yunika/Desktop/CPS/ESP_Deprecated_ADC_Data/build/bootloader-prefix/src/bootloader-stamp/${subDir}")
 endforeach()
 if(cfgdir)
-  file(MAKE_DIRECTORY "/home/anju_chhetri/Desktop/CPS/test/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
+  file(MAKE_DIRECTORY "/home/yunika/Desktop/CPS/ESP_Deprecated_ADC_Data/build/bootloader-prefix/src/bootloader-stamp${cfgdir}") # cfgdir has leading slash
 endif()

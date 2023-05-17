@@ -1,0 +1,4 @@
+{
+  "idf.port": "/dev/ttyUSB0",
+  "cmake.sourceDirectory": "/home/yunika/Desktop/CPS/ESP_Deprecated_ADC_Data"
+}
